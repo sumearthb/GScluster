@@ -1177,10 +1177,15 @@ server <- function(input, output, session) {
       })],
       function(j) {
         j = as.numeric(j)
-        rgb(
-          red = 880 * (0.25 / .GsQCutoff) * j,
-          green = 880 * (0.25 / .GsQCutoff) * j,
-          blue = 228 * (0.25 / .GsQCutoff) * j + 198, max = 255
+#         rgb(
+#           red = 880 * (0.25 / .GsQCutoff) * j,
+#           green = 880 * (0.25 / .GsQCutoff) * j,
+#           blue = 228 * (0.25 / .GsQCutoff) * j + 198, max = 255
+          rgb(
+            red = 200,
+            green = 200,
+            blue = 200,
+            max = 255
         )
       }
     )
